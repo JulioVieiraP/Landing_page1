@@ -1,4 +1,8 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'var';
 
 *{
     margin: 0;
@@ -6,11 +10,11 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: var.$textColor;
 }
 
 .text{
-    color: black;
+    color: var.$secondaryTextColor;
 }
 
 .container{
