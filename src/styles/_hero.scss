@@ -11,6 +11,17 @@
         position: relative;
     }
 
+    .contagem{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800
+    }
+
     &::before{
         position: absolute;
         top: 0;
@@ -24,7 +35,6 @@
 
     &__text{
         margin-top: 64px;
-        margin-bottom: 64px;
         font-size: 40px;
         line-height: 56px;
         font-weight: 800;
@@ -40,6 +50,11 @@
 
     @media (max-width: 640px){
         padding: 40px 0;
+        .contagem{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
         &__logo{
             height: 40px;
         }
